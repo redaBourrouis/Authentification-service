@@ -22,9 +22,8 @@ public class AppUser extends BasicEntity {
     private String password;
     private boolean activated;
     //private Date createdAt;
-   // private Date updatedAt;
+   //private Date updatedAt;
     @ManyToMany(fetch = FetchType.EAGER)
     private Collection<AppRole> roles=new ArrayList<>();
-    @ManyToOne
-    private ContactUser contactUser;
+
 }
